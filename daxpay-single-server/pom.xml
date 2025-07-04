@@ -34,14 +34,29 @@
     </properties>
 
     <dependencies>
-        <!-- lombok -->
+    	<dependency>
+			<groupId>com.hitox.base</groupId>
+			<artifactId>java-logback</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hitox.base</groupId>
+			<artifactId>secret-config-client</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>com.hitox.base</groupId>
+			<artifactId>java-core</artifactId>
+			<version>1.0.0-SNAPSHOT</version>
+		</dependency>
+		<!-- lombok -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <scope>provided</scope>
         </dependency>
 
-        <!-- lombok 配合 mapstruct -->
+		<!-- lombok 配合 mapstruct -->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok-mapstruct-binding</artifactId>
@@ -49,7 +64,7 @@
             <version>${lombok-mapstruct.version}</version>
         </dependency>
 
-        <!-- 类型转换处理器 -->
+		<!-- 类型转换处理器 -->
         <dependency>
             <groupId>org.mapstruct</groupId>
             <artifactId>mapstruct-processor</artifactId>
@@ -57,46 +72,46 @@
             <version>${mapstruct.version}</version>
         </dependency>
 
-        <!-- web框架 -->
+		<!-- web框架 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- 数据库驱动 PG -->
+		<!-- 数据库驱动 PG -->
         <dependency>
             <groupId>org.postgresql</groupId>
             <artifactId>postgresql</artifactId>
             <scope>runtime</scope>
         </dependency>
 
-        <!-- 数据库驱动 MySQL -->
-        <!--        <dependency>-->
-        <!--            <groupId>com.mysql</groupId>-->
-        <!--            <artifactId>mysql-connector-j</artifactId>-->
-        <!--        </dependency>-->
+		<!-- 数据库驱动 MySQL -->
+		<!--        <dependency>-->
+		<!--            <groupId>com.mysql</groupId>-->
+		<!--            <artifactId>mysql-connector-j</artifactId>-->
+		<!--        </dependency>-->
 
-        <!--文件存储 (minio方式)-->
+		<!--文件存储 (minio方式)-->
         <dependency>
             <groupId>io.minio</groupId>
             <artifactId>minio</artifactId>
             <version>${minio.version}</version>
         </dependency>
 
-        <!-- 支付通道实现 -->
-        <!-- 支付宝通道实现 -->
+		<!-- 支付通道实现 -->
+		<!-- 支付宝通道实现 -->
         <dependency>
             <groupId>org.dromara.daxpay</groupId>
             <artifactId>daxpay-single-alipay</artifactId>
             <version>${daxpay.version}</version>
         </dependency>
-        <!-- 微信通道实现 -->
+		<!-- 微信通道实现 -->
         <dependency>
             <groupId>org.dromara.daxpay</groupId>
             <artifactId>daxpay-single-wechat</artifactId>
             <version>${daxpay.version}</version>
         </dependency>
-        <!-- 云闪付通道实现 -->
+		<!-- 云闪付通道实现 -->
         <dependency>
             <groupId>org.dromara.daxpay</groupId>
             <artifactId>daxpay-single-union</artifactId>

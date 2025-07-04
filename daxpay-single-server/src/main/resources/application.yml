@@ -2,7 +2,7 @@ server:
   port: 9999
 spring:
   application:
-    name: dax-pay-server
+    name: daxpay-server
   profiles:
     active: dev
   task:
@@ -39,3 +39,5 @@ easy-trans:
 bootx-platform:
   config:
     client-code: dax-pay
+log:
+  path: /data/logs/${spring.application.name}
